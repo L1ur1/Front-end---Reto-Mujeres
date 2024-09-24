@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Conexión con el archivo CSS-->
+    <link rel="stylesheet" href="../css/style.css">
+    <!--Conexión con el archivo JS-->
+    <script src="../js/script.js"></script>
+    <!--Link de Conexión con la página de los íconos FONT-AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Vida y Salud</title>
+    <!--Link de Conexión con el Framework Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    
+    <div class='dashboard'>
+        <div class="dashboard-nav">
+            <header>
+                <a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a><a href="#!" class="brand-logo"><span><img src="../img/logo.jpg" width="180px" height="110px"></span></a>
+            </header>
+            <!--Menú HOME-->
+            <nav class="dashboard-nav-list">
+                <a href="#!" class="dashboard-nav-item text-decoration-none active fw-bold"><i class="fa-solid fa-house"></i> Home </a>
+                <!--Menú PERFIL DEL USUARIO-->
+                <a href="../contenido/perfilusuario.html" class="dashboard-nav-item text-decoration-none fw-bold"><i class="fa-solid fa-user"></i> Perfil del Usuario </a>
+                <!--Menú CERRAR SESIÓN-->
+                <div class="nav-item-divider"></div>
+                <a href="../index.html" class="dashboard-nav-item fw-bold text-decoration-none"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión </a>
+            </nav>
+        </div>
+        <div class='dashboard-app'>
+            <header class='dashboard-toolbar'><a href="#!" class="menu-toggle text-decoration-none"><i class="fas fa-bars"></i></a></header>
+            <div class='dashboard-content'>
+                <div class='container'>
+                    <div class='card'>
+                        <div class='card-header' style="background-color: #005187;">
+                            <h1 class="fw-bold" style="color: #FFFFFF;">¡ BIENVENID@ !</h1>
+                        </div>
+                    </div>
+        
+                <div class="row mt-3">
+                    <!--Implementación del Carrusel-->
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="../img/carrusel_2.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../img/carrusel_3.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../img/carrusel_1.jpg" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+                </div>
+                </div>
+                
+
+                <div class="row mt-4"></div>
+                    <div class='card mt-4'>
+                        <div class='card-header' style="background-color: #005187;">
+                            <h1 class="fw-bold" style="color: #FFFFFF;">ÓRDENES DE LABORATORIO</h1>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <!--Buscador - Número de Orden -->
+                <nav class="navbar bg-body-tertiary ms-5 me-4">
+                    <label class="form-label fw-bold" for="form1Example23">Número de Orden</label>
+                    <div class="container-fluid">
+                        <!--Búsqueda del Número de la Orden-->
+                        <form class="d-flex text-center" role="search">
+                            <input class="form-control me-2" style="border-color: #005187;" type="search" placeholder="Número" aria-label="Search">
+                            <!--Buscador por medio de un ícono para ejecutar la acción anterior-->
+                            <button class="btn btn-outline-success" style="border-color: #005187;" type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #005187"></i></button>
+                        </form>
+
+                        <!--Filtro por la búsqueda del Número de la Orden-->
+                        <label class="form-label fw-bold" for="form1Example23">Rango de Fecha</label>
+                            <form class="d-flex text-center" role="search">
+                                <input type="date" class="form-control" id="Fecha" name="email">
+                            </form>
+                            <form class="d-flex text-center" role="search">
+                                <input type="date" class="form-control" id="Fecha" name="email">
+                            </form>
+                            
+                            <!--Orden de forma descendente y ascendente-->
+                            <div class="ms-4 me-4">
+                                <button class="btn btn-outline-success" style="border-color: #005187;" type="submit"><i class="fa-solid fa-arrow-down-up-across-line" style="color: #005187"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </nav>
+                    
+                <!--Tabla - Listado de las Ordenes de Laboratorio-->
+                <div class="table-responsive mt-3 ms-4 me-4">
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr class="table-dark text-center">
+                                <th scope="col">SELEC.</th>
+                                <th scope="col">FECHA DE LA ORDEN</th>
+                                <th scope="col">CÓDIGO DEL DOCUMENTO DE LA ORDEN</th>
+                                <th scope="col">NÚMERO DE LA ORDEN</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+
+
+                <tbody class="table-group-divider">
+                    <tr>
+                        <td>
+                            <div class="mb-3 form-check mt-3 ms-5">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1"></label>
+                            </div>
+                        </td>
+                        <td class="text-center">27/09/2024</td>
+                        <td class="text-center">28856630</td>
+                        <td class="text-center">987</td>
+                    </tr>
+                </tbody>
+                       
+
+
+                
+
+            </div>
+        </div>
+    </div>
+
+    <!--Link de Conexión con el Framework Boostrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    
